@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+        <meta charset="UTF-8" name="viewport" content="width=device-width">
+        <title>Mana Brave</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id=body>
+        <h1>Mana Brave</h1>
+
+        <!-- 画面上側 -->
+        <div id="fightBox">
+            <div id="heroBlock">
+            </div>
+            <div id="monsterFlexBox">
+            </div>
+        </div>
+
+        <!-- 画面下側 -->
+        <div class="horizontalFlexBox">
+            <!-- 画面左下 -->
+            <div class="verticalFlexBox">
+                <!-- 画面左下 タスク追加 -->
+                <div id="newTaskBlock">
+                    <p>NEW</p>
+                    <br>
+                    <!-- 教科選択 -->
+                    <input type="radio" name="Subject" value="国語">国語
+                    <input type="radio" name="Subject" value="数学">数学
+                    <input type="radio" name="Subject" value="英語">英語
+                    <input type="radio" name="Subject" value="理科">理科
+                    <input type="radio" name="Subject" value="社会">社会
+                    <input type="radio" name="Subject" value="その他">その他
+                    <br><br>
+                    <!-- 時間/量入力 -->
+                    <input type="radio" name="Unit" value="Time" onclick="inputTime()">時間
+                    <input type="radio" name="Unit" value="Amount" onclick="inputAmount()">量（ページ数）
+                    <br>
+                    <div id="unitText"></div>
+                    <br>
+                    <!-- 教材入力、タスク追加 -->
+                    <input type="text" id="newTaskText" size="30">
+                    <input type="button" id="newTaskButton" value="追加" class="button">
+                </div>
+                <!-- 画面左下 完了タスク -->
+                <div id="completeBlock">
+                    <p>COMPLETE</p>
+                    <div id="completeMonsterBox">
+                    </div>
+                </div>
+            </div>
+            <!-- 画面右下 タスクリスト-->
+            <div id="taskListBlock">
+                <p>MANABI</p>
+                <div class="verticalTaskFlexBox">
+                    <div id="taskList">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+body{
+    background-color: #272343;
+    font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, sans-serif;
+    width: 75%;
+    margin: 0 auto;
+}
+h1{
+    color: #fffffe;
+    text-align: center;
+}
+p{
+    color: #2d334a;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+}
+/* ボタンのデザイン */
+.button{
+    width: 100%;
+    max-width: 50px;
+    padding: 2px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #272343;
+    background-color: #ffd803;
+}
+
+#fightBox{
+    display: flex;
+    background-color: #bae8e8;
+    border-radius: 5px;
+    height: 200px;
+    width: 95%;
+    margin: auto;
+}
+#heroBlock{
+    display: flex; /*中央寄せのため*/
+    justify-content: center;
+    align-items: center;
+    flex-basis: 20%; /* 親要素の20% */
+    margin: 20px;
+}
+#monsterFlexBox{
+    display: flex;
+    width: auto;
+}
+.monsterBlock{
+    width: auto;
+    display: flex; /*中央寄せのため*/
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontalFlexBox{
+    display: flex; /* 横並びにする */
+    justify-content: space-around; /* 子要素を均等に配置 */
+    margin: 15px;
+}
+#newTaskBlock{
+    /* color: #CCCCCC; */
+    color: #2d334a;
+    background-color: #e3f6f5;
+    border-radius: 5px;
+    height: 200px;
+    padding: 10px;
+}
+.verticalFlexBox{
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    flex-basis: 50%;
+    margin: 10px;
+}
+#completeBlock{
+    background-color: #e3f6f5;
+    border-radius: 5px;
+    height: 200px;
+    margin-top: 20px;
+    padding: 10px;
+}
+#completeMonsterBox{
+    position: relative; /*子要素がabsoluteなため*/
+    display: flex;
+    height: 120px;
+}
+
+#taskListBlock{
+    background-color: #e3f6f5;
+    border-radius: 5px;
+    min-height: 400px;
+    height: auto !important; /* フレキシブルに高さ変更 */
+    min-height: 400px;
+    margin: 10px;
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.verticalTaskFlexBox{
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    margin: 5px;
+}
+.taskFrame{
+    background-color: #fffffe;
+    color: #2d334a;
+    border-radius: 5px;
+    height: 80px;
+    width: 90%;
+    padding: 5px;
+    margin: 0 auto; /* フレームを中央寄せ */
+    margin-bottom: 10px;
+}
+
+.taskFlexBox{
+    display: flex;
+}
+.imageFlex{
+    width: 100px;
+    height: 80px;
+    display: flex; /* 画像を中央寄せにするため */
+    justify-content: center;
+    align-items: center;
+}
+.imageBlock{
+    width: auto;
+}
+.textBlock{
+    flex-basis: 60%; /* 親要素の60% */
+}
+.buttonBlock{
+    width: 50px;
+    padding: 3px;
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    justify-content: space-around; /* 子要素を均等に配置 */
+}
